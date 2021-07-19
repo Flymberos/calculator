@@ -104,19 +104,23 @@ let temp = (operator) => {
 
 //Logic
 let add = (a, b) => {
-    return a + b;
+    let result = a + b;
+    return Math.round(result * 10) / 10;
 }
 
 let subtract = (a, b) => {
-    return a - b;
+    let result = a - b;
+    return Math.round(result * 10) / 10;
 }
 
 let multiply = (a, b) => {
-    return a * b;
+    let result = a * b;
+    return Math.round(result * 10) / 10;
 }
 
 let divide = (a, b) => {
-    return a / b;
+    let result = a / b;
+    return Math.round(result * 10) / 10;
 }
 
 let operate = (operator, a, b) => {
