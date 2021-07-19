@@ -1,0 +1,30 @@
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+body{
+    background-color: #ff4e00;
+    background-image: linear-gradient(45deg, #ff4e00 0%, #ec9f05 74%);
+}
+
+.calculator > button {
+    font-size: 2rem;
+}
+
+.screen {
+    grid-column: span 4;
+    background-color: black;
+    opacity: 75%;
+}
+
+.span-two {
+    grid-column: span 2;
+}
