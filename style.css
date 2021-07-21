@@ -17,6 +17,16 @@ body{
 
 .calculator > button {
     font-size: 2rem;
+    opacity: 0.9;
+    border: none;
+}
+
+.calculator > button:hover {
+    opacity: 1;
+}
+
+.all-clear {
+    background-color: #DF362D;
 }
 
 .screen {

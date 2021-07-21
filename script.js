@@ -41,6 +41,11 @@ dot.addEventListener("click", () => {
 equals.addEventListener("click", () => {
     if(upperScreen.textContent !== ""){
         let result = operate(currentOperator, firstNumber, inputScreen.textContent);
+
+        if(isNaN(result) || result === Infinity){
+            result = "Err";
+        }
+        
         firstNumber = result;
         upperScreen.textContent = result;
         inputScreen.textContent = "";
