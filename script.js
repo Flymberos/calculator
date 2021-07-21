@@ -12,6 +12,7 @@ let currentOperator = undefined;
 
 numberButtons.forEach( (button) => {
     button.addEventListener("click", () => {
+        if(upperScreen.textContent !== "" && !upperScreen.textContent.includes(currentOperator)) return;
         inputScreen.textContent += button.textContent;
     })
 });
