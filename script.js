@@ -6,6 +6,7 @@ let equals = document.querySelector(".equals");
 let allClear = document.querySelector(".all-clear");
 let del = document.querySelector(".delete");
 let dot = document.querySelector(".dot");
+
 let firstNumber = undefined;
 let currentOperator = undefined;
 
